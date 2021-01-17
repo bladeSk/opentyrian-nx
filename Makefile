@@ -30,8 +30,8 @@ include $(DEVKITPRO)/libnx/switch_rules
 #     - <libnx folder>/default_icon.jpg
 #---------------------------------------------------------------------------------
 APP_TITLE	:=	Open Tyrian $(VERSION)
-APP_AUTHOR	:=	Switch Port by CTF
-APP_VERSION	:=	1.0.1
+APP_AUTHOR	:=	Switch Port by CTF + blade.sk
+APP_VERSION	:=	1.0.2
 #---------------------------------------------------------------------------------
 TARGET		:=	opentyrian
 BUILD		:=	build
