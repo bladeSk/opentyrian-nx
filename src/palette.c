@@ -21,6 +21,7 @@
 #include "opentyr.h"
 #include "palette.h"
 #include "video.h"
+#include "keyboard.h"
 
 #include <assert.h>
 
@@ -148,6 +149,8 @@ void fade_palette( Palette colors, int steps, unsigned int first_color, unsigned
 		
 		wait_delay();
 	}
+
+	service_SDL_events(true); // fix stuck key presses when changing screens
 }
 
 void fade_solid( SDL_Color color, int steps, unsigned int first_color, unsigned int last_color )
@@ -167,6 +170,8 @@ void fade_solid( SDL_Color color, int steps, unsigned int first_color, unsigned 
 		
 		wait_delay();
 	}
+
+	service_SDL_events(true); // fix stuck key presses when changing screens
 }
 
 void fade_black( int steps )

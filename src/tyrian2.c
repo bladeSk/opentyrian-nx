@@ -3530,7 +3530,7 @@ bool JE_titleScreen( bool animate )
 				switch (lastkey_scan)
 				{
 				case SDL_SCANCODE_ESCAPE:
-					quit = true;
+					// quit = true;
 					break;
 				case SDL_SCANCODE_RETURN:
 					JE_playSampleNum(S_SELECT);
